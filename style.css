@@ -1,0 +1,157 @@
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    font-size: 26px;
+}
+
+@font-face {
+    font-family: 'Nine';
+    src: url('font/Nine.eot');
+    src: url('font/Nine.eot?#iefix') format('embedded-opentype'),
+        url('font/Nine.woff2') format('woff2'),
+        url('font/Nine.woff') format('woff'),
+        url('font/Nine.ttf') format('truetype'),
+        url('font/Nine.svg#Nine') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nine', serif;
+}
+
+.navbar {
+    max-height: 64px;
+    background-color: #008080;
+}
+
+.hero {
+    /* Sizing */
+    width: 98.8vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+    
+    /* Background styles */
+    background-color: rgba(147, 112, 219, 0.8);
+}
+
+.hero p {
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.hero.education {
+    height: 10vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
+}
+
+.hero.resume.south {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/shs.jpg');
+}
+
+.hero.resume.elcamino {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/elcamino.jpg');
+}
+
+.hero.resume.uci {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/uci.jpg');
+}
+
+.hero.work {
+    height: 10vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
+}
+
+.hero.resume.employment {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
+}
+
+.hero.resume.employment div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.hero.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
+}
+
+.hero.about div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.hero.writing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+}
+
+.box {
+    display: flex;
+    font-size: 1.45rem;
+}
+
+.flex.one { /*two*/
+    flex: 1;
+    margin: 0 15px;
+}
+
+.flex.oneminus { /*one*/
+    flex: 0.9;
+    margin: 0 15px;
+}
+
+.flex.oneplus { /*three*/
+    flex: 1.1;
+    margin: 0 15px;
+}
