@@ -10,3 +10,4 @@ My personal website files
 * https://steamprofile.com/
 * https://blog.discordapp.com/add-the-discord-widget-to-your-site-d45ffcd718c6
 * https://developers.google.com/youtube/player_parameters
+* https://blackbirdpublishing.com/adding-a-goodreads-books-widget-to-your-author-website/
