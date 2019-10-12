@@ -43,7 +43,7 @@ My personal website files
     ]
 }
 ```
-1. Click Save
+27. Click Save
 1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
 1. Choose a region close to you and click Next
