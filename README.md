@@ -69,6 +69,7 @@ My personal website files
 1. Click Save Record Set
 1. Click Create Record Set
 1. Leave the name field blank
+1. Keep A - IPv4 address
 1. Click Yes next to Alias
 1. Use the Alias Target of your other record (ex: www.elderek.com.)
 1. Click Save Record Set
