@@ -19,6 +19,12 @@ html {
 body {
     margin: 0;
     font-family: 'Nine', serif;
+    margin-top: 50px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .navbar {
@@ -28,8 +34,8 @@ body {
 
 .hero {
     /* Sizing */
-    width: 98.8vw;
-    height: 100vh;
+    width: 98.9vw;
+    height: 95.3vh;
     
     /* Flexbox stuff */
     display: flex;
@@ -86,7 +92,11 @@ body {
     margin-left: 50px;
 }
 
-.hero.education {
+.hero.resume {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torranceview.jpg');
+}
+
+.hero.resume.education {
     height: 10vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
 }
@@ -103,7 +113,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/uci.jpg');
 }
 
-.hero.work {
+.hero.resume.work {
     height: 10vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
 }
@@ -136,22 +146,23 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
 }
 
+.hero.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+}
+
+.hero.contact div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
 .box {
     display: flex;
-    font-size: 1.45rem;
 }
 
-.flex.one { /*two*/
+.flex.one {
     flex: 1;
-    margin: 0 15px;
-}
-
-.flex.oneminus { /*one*/
-    flex: 0.9;
-    margin: 0 15px;
-}
-
-.flex.oneplus { /*three*/
-    flex: 1.1;
     margin: 0 15px;
 }
