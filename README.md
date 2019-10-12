@@ -4,9 +4,9 @@ My personal website files
 ## Hosting a static website in AWS
 
 1. Login to https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2 (or set up an account if you don't have one)
-1. Go to Services > Route53
+1. Go to Services > Route 53
 1. On the left hand side click on Registered domains under Domains
-1. Click on Register Domain
+1. Click Register Domain
 1. Enter in your desired domain name
 1. Enter in your contact details
 1. Verify your details and click on purchase
