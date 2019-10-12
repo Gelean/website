@@ -1,6 +1,11 @@
 # Delder's Domain
 My personal website files
 
+## Using AWS
+
+* https://medium.com/@kyle.galbraith/how-to-host-a-website-on-s3-without-getting-lost-in-the-sea-e2b82aa6cd38
+* https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-s3-tasks
+
 ## References and Code
 * https://getbootstrap.com/
 * https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
