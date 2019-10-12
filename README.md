@@ -29,6 +29,7 @@ My personal website files
 1. Click the Permissions tab
 1. Click on Bucket Policy
 1. Paste the following in (changing the domain name to your domain name):
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -41,6 +42,7 @@ My personal website files
         }
     ]
 }
+```
 1. Click Save
 1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
