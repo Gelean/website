@@ -1,5 +1,5 @@
 # Delder's Domain
-My personal website files
+My personal website files for www.elderek.com
 
 ## Hosting a static website in AWS
 
