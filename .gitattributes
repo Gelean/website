@@ -1,1 +1,5 @@
+bootstrap export-ignore
+bootstrap/ export-ignore
 /bootstrap export-ignore
+/bootstrap/**/* export-ignore
+bootstrap/**/* export-ignore
