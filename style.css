@@ -4,6 +4,14 @@ html {
     font-size: 26px;
 }
 
+::-moz-selection {
+    background: #008080;
+}
+
+::selection {
+    background: #008080;
+}
+
 @font-face {
     font-family: 'Nine';
     src: url('font/Nine.eot');
