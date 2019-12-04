@@ -5,10 +5,12 @@ html {
 }
 
 ::-moz-selection {
+    color: black;
     background: #008080;
 }
 
 ::selection {
+    color: black;
     background: #008080;
 }
 
@@ -37,12 +39,12 @@ h1, h2, h3, h4 {
 
 .navbar {
     max-height: 64px;
-    background-color: #008080;
+    background-color: #008080; /* 0EAB8E */
 }
 
 .hero {
     /* Sizing */
-    width: 98.9vw;
+    width: 99.6vw;
     height: 95.3vh;
     
     /* Flexbox stuff */
