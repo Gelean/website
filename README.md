@@ -59,6 +59,7 @@ My personal website files for www.elderek.com
 </CORSConfiguration>
 ```
 30. Click Save
+1. Optional: Enable Content-Encoding gzip compression per https://www.thepolyglotdeveloper.com/2018/10/serving-gzipped-javascript-files-amazon-s3/
 1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
 1. Choose a region close to you and click Next
@@ -104,3 +105,4 @@ My personal website files for www.elderek.com
 * https://medium.com/@kyle.galbraith/how-to-host-a-website-on-s3-without-getting-lost-in-the-sea-e2b82aa6cd38
 * https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-s3-tasks
 * https://favicon.io/favicon-generator/
+* https://www.minifier.org
