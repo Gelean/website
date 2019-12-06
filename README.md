@@ -58,7 +58,8 @@ My personal website files for www.elderek.com
     </CORSRule>
 </CORSConfiguration>
 ```
-30. Back in S3, click on Create bucket
+30. Click Save
+1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
 1. Choose a region close to you and click Next
 1. Uncheck Block All Public Access
