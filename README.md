@@ -44,7 +44,21 @@ My personal website files for www.elderek.com
 }
 ```
 27. Click Save
-1. Back in S3, click on Create bucket
+1. Click on CORS configuration
+1. Paste the following in:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <CORSRule>
+        <AllowedOrigin>*</AllowedOrigin>
+        <AllowedMethod>GET</AllowedMethod>
+        <MaxAgeSeconds>3000</MaxAgeSeconds>
+        <AllowedHeader>Authorization</AllowedHeader>    
+        <AllowedHeader>Content-Length</AllowedHeader>
+    </CORSRule>
+</CORSConfiguration>
+```
+30. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
 1. Choose a region close to you and click Next
 1. Uncheck Block All Public Access
