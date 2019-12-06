@@ -60,6 +60,7 @@ My personal website files for www.elderek.com
 ```
 30. Click Save
 1. Optional: Enable Content-Encoding gzip compression per https://www.thepolyglotdeveloper.com/2018/10/serving-gzipped-javascript-files-amazon-s3/
+1. Optional: Enable Cache-Control per https://stackoverflow.com/questions/22501465/how-to-add-cache-control-in-aws-s3
 1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
 1. Choose a region close to you and click Next
