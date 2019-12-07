@@ -59,7 +59,7 @@ My personal website files for www.elderek.com
 </CORSConfiguration>
 ```
 30. Click Save
-1. Optional: Enable Content-Encoding gzip compression per https://www.thepolyglotdeveloper.com/2018/10/serving-gzipped-javascript-files-amazon-s3/ (Note: This seems to break the CSS styling if done in S3)
+1. Optional: Enable Content-Encoding gzip compression per https://www.thepolyglotdeveloper.com/2018/10/serving-gzipped-javascript-files-amazon-s3/, see also: https://stackoverflow.com/questions/18456535/aws-s3-returns-200ok-parser-fails-if-contentencoding-gzip, https://stackoverflow.com/questions/5442011/serving-gzipped-css-and-javascript-from-amazon-cloudfront-via-s3
 1. Optional: Enable Cache-Control per https://stackoverflow.com/questions/22501465/how-to-add-cache-control-in-aws-s3
 1. Back in S3, click on Create bucket
 1. Use your website domain name minus www for the bucket name (ex: elderek.com)
