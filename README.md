@@ -107,3 +107,5 @@ My personal website files for www.elderek.com
 * https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-s3-tasks
 * https://favicon.io/favicon-generator/
 * https://www.minifier.org
+* https://developers.google.com/speed/pagespeed/insights/
+* https://gtmetrix.com
