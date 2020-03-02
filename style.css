@@ -1,5 +1,5 @@
 html {
-    overflow: -moz-scrollbars-vertical; 
+    overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
     font-size: 26px;
 }
@@ -37,17 +37,35 @@ h1, h2, h3, h4 {
     margin-bottom: 0px;
 }
 
-.navbar {
-    max-height: 64px;
-    background-color: #008080; /* 0EAB8E */
+.bg-teal {
+    background-color: #008080 !important;
+}
+
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
 }
 
 .hero {
     /* Sizing */
-    width: 99.6vw;
-    height: 95.3vh;
+    width: 100%;
+    height: 100vh;
+
+    /*
+    min-height: 1074px;
+    min-width: 1024px;
+
+    width: 100%;
+    height: auto;
+    */
     
     /* Flexbox stuff */
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     /*overflow: hidden;*/
@@ -94,6 +112,12 @@ h1, h2, h3, h4 {
     text-align: left;
     justify-content: left;
     align-items: left;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
 
     margin-top: 10px;
@@ -158,10 +182,18 @@ h1, h2, h3, h4 {
 
 .hero.contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+    /**
+    background: rgb(0,50,50);
+    background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
+    */
 }
 
 .hero.contact div {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+    /**
+    background: rgb(0,50,50);
+    background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
+    */
     background-size: cover;
     background-position: center center;
     background-repeat: repeat-y;
@@ -169,6 +201,12 @@ h1, h2, h3, h4 {
 }
 
 .box {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
 }
 
