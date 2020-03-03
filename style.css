@@ -1,9 +1,3 @@
-html {
-    overflow: -moz-scrollbars-vertical;
-    overflow-y: scroll;
-    font-size: 26px;
-}
-
 ::-moz-selection {
     color: black;
     background: #008080;
@@ -12,6 +6,12 @@ html {
 ::selection {
     color: black;
     background: #008080;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    font-size: 26px;
 }
 
 @font-face {
@@ -27,14 +27,36 @@ html {
 }
 
 body {
+    /* Sizing */
+    width: 100%;
+    height: 100vh;
     margin: 0;
+    margin-top: 65px;
+
+    /* Text styles */
     font-family: 'Nine', serif;
-    margin-top: 50px;
+    text-align: center;
+    color: white;
+
+    /* Background styles */
+    background: rgb(0,50,50);
+    background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
 }
 
 h1, h2, h3, h4 {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+p {
+    /* Sizing */
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .bg-teal {
@@ -46,52 +68,14 @@ h1, h2, h3, h4 {
   height: 1em;
 }
 
-.hero {
-    /* Sizing */
-    width: 100%;
-    height: 100vh;
-
-    /*
-    min-height: 1074px;
-    min-width: 1024px;
-
-    width: 100%;
-    height: auto;
-    */
-    
-    /* Flexbox stuff */
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    /*overflow: hidden;*/
-    justify-content: center;
-    align-items: center;
-    
-    /* Text styles */
-    text-align: center;
-    color: white;
-    
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-}
-
-.hero .btn {
+.btn {
     /* Positioning and sizing */
     display: block;
     width: 200px;
     
     /* Padding and margins */
     padding: 1em;
-    margin-top: 50px;
+    margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
     
@@ -108,10 +92,8 @@ h1, h2, h3, h4 {
     background-color: rgba(147, 112, 219, 0.8);
 }
 
-.hero p {
-    text-align: left;
-    justify-content: left;
-    align-items: left;
+.home {
+    /* Flexbox stuff */
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -119,20 +101,47 @@ h1, h2, h3, h4 {
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    justify-content: center;
+    align-items: center;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    justify-content: center;
+    align-items: center;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 
 .hero.resume {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torranceview.jpg');
-}
-
-.hero.resume.education {
-    height: 10vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
 }
 
 .hero.resume.south {
@@ -147,57 +156,38 @@ h1, h2, h3, h4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/uci.jpg');
 }
 
-.hero.resume.work {
-    height: 10vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
-}
-
 .hero.resume.employment {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
 }
 
-.hero.resume.employment div {
+.hero-inner.employment {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
 }
 
-.hero.about {
+.hero.resume.work {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
+    height: 10vw;
+}
+
+.hero.resume.education {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
+    height: 10vw;
+}
+
+.about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
-}
-
-.hero.about div {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.hero.writing {
+.writing {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
 }
 
-.hero.contact {
+.contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
-    /**
-    background: rgb(0,50,50);
-    background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
-    */
-}
-
-.hero.contact div {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
-    /**
-    background: rgb(0,50,50);
-    background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
-    */
-    background-size: cover;
-    background-position: center center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
 }
 
 .box {
@@ -208,9 +198,10 @@ h1, h2, h3, h4 {
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.flex.one {
+.flex. {
     flex: 1;
     margin: 0 15px;
 }
