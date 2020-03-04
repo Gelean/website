@@ -68,31 +68,7 @@ p {
   height: 1em;
 }
 
-.btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 200px;
-    
-    /* Padding and margins */
-    padding: 1em;
-    margin-top: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* Text styles */
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    
-    /* Border styles */
-    border: 3px solid white;
-    border-radius: 20px;
-    
-    /* Background styles */
-    background-color: rgba(147, 112, 219, 0.8);
-}
-
-.home {
+.background {
     /* Flexbox stuff */
     -ms-box-orient: horizontal;
     display: -webkit-box;
@@ -107,11 +83,14 @@ p {
     align-items: center;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.background.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
 }
 
 .hero {
@@ -174,19 +153,15 @@ p {
     height: 10vw;
 }
 
-.about {
+.background.about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-.writing {
+.background.writing {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
 }
 
-.contact {
+.background.contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
 }
 
