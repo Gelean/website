@@ -20,6 +20,8 @@ var quotesArray = [
 	["‘We need’ is always code for ‘I want.’", "Michael Malice"],
 	["Wildcard bitches!", "Charlie Kelly, Always Sunny in Philadelphia"],
 	["I'll never be frightened of shepherds. It's the sheep who trouble me.", "Petyr Baelish, A Clash of Kings"],
+	["Loyal service means telling hard truths.", "Davos, Game of Thrones"],
+	["A good act does not wash out the bad, nor a bad act the good. Each should have its own reward.", "Stannis Baratheon, A Clash of Kings"],
 	["Always keep your foes confused. If they are never certain who you are or what you want, they cannot know what you are like to do next. Sometimes the best way to baffle them is to make moves that have no purpose, or even seem to work against you.", "Petyr Baelish, A Storm of Swords,"],
 	["Rules are for children. This is war, and in war the only crime is to lose.", "Bayaz, Last Argument of Kings"]
 ];
