@@ -15,7 +15,7 @@ var quotesArray = [
 	["Don't fight a battle if you don't gain anything by winning.", "Erwin Rommel"],
 	["It is well that war is so terrible, otherwise we should grow too fond of it.", "Robert E. Lee"],
 	["War is cruelty. There is no use trying to reform it. The crueler it is, the sooner it will be over.", "William Tecumseh Sherman"],
-	["If you would know who controls you see who you may not criticis.e", "Tacitus"],
+	["If you would know who controls you see who you may not criticise.", "Tacitus"],
 	["A man is no less a slave because he is allowed to choose a new master once in a term of years.", "Lysander Spooner"],
 	["Don't ever take a fence down until you know the reason it was put up.", "G. K. Chesterton"],
 	["No-one is equal to anything. Even the same man is not equal to himself on different days.", "Thomas Sowell"],
