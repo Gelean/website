@@ -1,6 +1,7 @@
 var quotesArray = [
 	["Honor is simply the morality of superior men.", "H.L. Mencken"],
-	["Never interrupt your enemy when they are making a mistake.", "Napoleon Bonaporte"],
+	["The urge to save humanity is almost always a false front for the urge to rule.", "H. L. Mencken"],
+	["Never interrupt your enemy when they are making a mistake.", "Napoleon Bonaparte"],
 	["The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants.", "Thomas Jesfferson"],
 	["Live free or die: Death is not the worst of evils.", "John Stark"],
 	["What you most want to find will be found where you least want to look.", "Carl Jung"],
@@ -10,6 +11,7 @@ var quotesArray = [
 	["Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive. It would be better to live under robber barons than under omnipotent moral busybodies. The robber baron's cruelty may sometimes sleep, his cupidity may at some point be satiated; but those who torment us for our own good will torment us without end for they do so with the approval of their own conscience.", "C. S. Lewis"],
 	["Treade a worme on the tayle, and it must turne agayne.", "John Heywood"],
 	["We hang the petty thieves and appoint the great ones to public office.", "Aesop"],
+	["After all is said and done, more is said than done.", "Aesop"],
 	["Don't fight a battle if you don't gain anything by winning.", "Erwin Rommel"],
 	["It is well that war is so terrible, otherwise we should grow too fond of it.", "Robert E. Lee"],
 	["War is cruelty. There is no use trying to reform it. The crueler it is, the sooner it will be over.", "William Tecumseh Sherman"],
