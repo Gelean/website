@@ -96,7 +96,7 @@ p {
 .hero {
     /* Sizing */
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     
     /* Flexbox stuff */
     -ms-box-orient: horizontal;
@@ -119,8 +119,18 @@ p {
     background-attachment: fixed;
 }
 
+.hero.resume.work {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
+    height: 10vw;
+}
+
+.hero.resume.education {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
+    height: 10vw;
+}
+
 .hero.resume {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torranceview.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torranceview-min.jpg');
 }
 
 .hero.resume.south {
@@ -143,16 +153,6 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
 }
 
-.hero.resume.work {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
-    height: 10vw;
-}
-
-.hero.resume.education {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
-    height: 10vw;
-}
-
 .background.about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
 }
@@ -165,18 +165,6 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
 }
 
-.box {
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex. {
-    flex: 1;
-    margin: 0 15px;
+.background.sol {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/SoL logo by Evan Mod.jpg');
 }
