@@ -92,41 +92,6 @@ My personal website files for www.elderek.com
 1. Click Save Record Set
 1. Leave Routing Policy and Evaluate Target Health alone
 1. Now type your website into your browser and confirm both addresses (ex: elderek.com and www.elderek.com) are working
-1. The following steps outline how to get HTTPS working (WORK IN PROGRESS)
-1. Go to Services > Certificate Manager
-1. Click Get Started under Provision certificates
-1. Switch to the N. Virginia region (us-east-1) so the certificate will be available to Cloudfront
-1. Request a public certificate will be checked by default
-1. Click Request a Certificate
-1. Type your domain name into the box (ex: www.elderek.com)
-1. Click Add another name to this certificate
-1. Type in your wildcard domain (ex: *.elderek.com)
-1. Click Next
-1. Leave DNS validation checked
-1. Click Review
-1. Click Confirm and request
-1. On the Validation window click on both Create record in Route 53 buttons
-1. After both succeed click Continue
-1. Amazon will then validate the domain name, it may take a few minutes
-1. Once the certificates are issued go to Services > Cloudfront
-1. Create Distribution
-1. Click Get Started
-1. Under Origin domain name select your domain name (ex: www.elderek.com.s3.amazonaws.com)
-1. Check "Redirect HTTP to HTTPS"
-1. Under Price Class choose "Use only US, Canada and Europe" 
-1. Under Alternate Domain Names (CNAMEs) type in both of your domains (ex: www.elderek.com, elderek.com, *.elderek.com)
-1. Under SSL Certificate check "Custom SSL Certificate (example.com)" and in the dropdown select your domain (ex: www.elderek.com...)
-1. Click Create Distribution
-1. This next step may take some time so monitor the Status and wait for it to change from In Progress to Deployed
-1. Go to Services > Route 53
-1. Click on Hosted Zones
-1. Click on your domain name
-1. Click Create Record Set
-1. Enter www in the name field
-1. Keep A - IPv4 address
-1. Click Yes next to Alias
-1. Click the Alias Target and select the CloudFront distribution relating to your domain name
-1. Click Save Record Set
 
 ## References and Code
 * https://getbootstrap.com/
