@@ -128,8 +128,6 @@ My personal website files for www.elderek.com
 1. Click the Alias Target and select the CloudFront distribution relating to your domain name
 1. Click Save Record Set
 
-Click Create
-
 ## References and Code
 * https://getbootstrap.com/
 * https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
@@ -146,4 +144,3 @@ Click Create
 * https://www.minifier.org
 * https://developers.google.com/speed/pagespeed/insights/
 * https://gtmetrix.com
-* https://letsencrypt.org
