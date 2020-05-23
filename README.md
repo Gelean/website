@@ -109,3 +109,4 @@ My personal website files for www.elderek.com
 * https://www.minifier.org
 * https://developers.google.com/speed/pagespeed/insights/
 * https://gtmetrix.com
+* https://aws.amazon.com/premiumsupport/knowledge-center/s3-website-cloudfront-error-403/
