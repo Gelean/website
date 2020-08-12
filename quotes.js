@@ -2,7 +2,7 @@ var quotesArray = [
 	["Honor is simply the morality of superior men.", "H.L. Mencken"],
 	["The urge to save humanity is almost always a false front for the urge to rule.", "H. L. Mencken"],
 	["Never interrupt your enemy when they are making a mistake.", "Napoleon Bonaparte"],
-	["The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants.", "Thomas Jesfferson"],
+	["The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants.", "Thomas Jefferson"],
 	["Live free or die: Death is not the worst of evils.", "John Stark"],
 	["What you most want to find will be found where you least want to look.", "Carl Jung"],
 	["No tree, it is said, can grow to heaven unless its roots reach down to hell.", "Carl Jung"],
