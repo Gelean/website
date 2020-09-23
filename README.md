@@ -1,4 +1,5 @@
 # Delder's Domain
+
 My personal website files for www.elderek.com
 
 ## Hosting a static website in AWS
@@ -93,7 +94,27 @@ My personal website files for www.elderek.com
 1. Leave Routing Policy and Evaluate Target Health alone
 1. Now type your website into your browser and confirm both addresses (ex: elderek.com and www.elderek.com) are working
 
+## Docker image
+
+### Setup the Docker container
+
+1. cd to the location of the website folder
+1. docker build -t elderek-website-image:1.0 .
+1. docker run -itd --name elderek-website-image-container --publish 8080:80 elderek-website-image:1.0
+1. docker ps -a
+1. Visit http://localhost:8080
+
+### Tear down the Docker container
+
+1. docker rm $(docker stop $(docker ps -aq --filter ancestor=elderek-website-image --format="{{.ID}}"))
+1. Alternate tear down commands:
+    1. docker ps -aq | xargs -n 1 docker stop
+    1. docker ps -aq | xargs -n 1 docker rm
+1. docker system prune -a
+1. docker images -a
+
 ## References and Code
+
 * https://getbootstrap.com/
 * https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
 * https://www.pentacom.jp/pentacom/bitfontmaker2/
