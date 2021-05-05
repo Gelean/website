@@ -16,12 +16,12 @@ html {
 
 @font-face {
     font-family: 'Nine';
-    src: url('font/Nine.eot');
-    src: url('font/Nine.eot?#iefix') format('embedded-opentype'),
-        url('font/Nine.woff2') format('woff2'),
-        url('font/Nine.woff') format('woff'),
-        url('font/Nine.ttf') format('truetype'),
-        url('font/Nine.svg#Nine') format('svg');
+    src: url('fonts/Nine.eot');
+    src: url('fonts/Nine.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Nine.woff2') format('woff2'),
+        url('fonts/Nine.woff') format('woff'),
+        url('fonts/Nine.ttf') format('truetype'),
+        url('fonts/Nine.svg#Nine') format('svg');
     font-weight: normal;
     font-style: normal;
 }
