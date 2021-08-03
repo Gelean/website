@@ -102,10 +102,10 @@ var quotesArray = [
 	["Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.", "Antoine de Saint-Exupery"],
 	["Power resides where men believe it resides, it's a trick, a shadow on the wall. And a very small man can cast a very large shadow.", "Varys, A Clash of Kings"],
 	["Rome wasn't built in a day.", "Proverb"],
-	["Rules are for children. This is war, and in war the only crime is to lose.", "Bayaz, Last Argument of Kings"]
+	["Rules are for children. This is war, and in war the only crime is to lose.", "Bayaz, Last Argument of Kings"],
 	["Show me the man and I'll show you the crime", "Lavrentiy Beria"],
 	["Some ideas are so stupid that only intellectuals believe them.", "George Orwell"],
-	["The average man does not want to be free. He simply wants to be safe.", "H. L. Mencken"]
+	["The average man does not want to be free. He simply wants to be safe.", "H. L. Mencken"],
 	["The mass of men lead lives of quiet desperation.", "Henry David Thoreau"],
 	["The obedient always think about themselves as virtuous, rather than cowardly.", "Robert Anton Wilson"],
 	["The role of a writer is not to say what we can all say, but what we are unable to say.", "Anais Nin"],
@@ -168,7 +168,7 @@ var quotesArray = [
 	["With each passing day, the world finds new and exciting ways to kill a man.", "Balthier, Final Fantasy XII"],
 	["You can't cheat an honest man.", "Proverb"],
 	["You should laugh every moment you live, for you'll find it decidedly difficult afterwards.", "Joe Abercrombie, Best Served Cold"],
-	["‘We need’ is always code for ‘I want.’", "Michael Malice"],
+	["‘We need’ is always code for ‘I want.’", "Michael Malice"]
 ];
 function displayQuote() {
 	var rand = Math.floor(Math.random() * (quotesArray.length));
