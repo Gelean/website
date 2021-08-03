@@ -119,6 +119,17 @@ a:visited {
     animation-play-state: running;
 }
 
+.glow:hover {
+    animation: none;
+    color: #FEF051;
+    text-shadow: 0 0 4px rgba(255,153,0,1),
+    0 0 8px rgba(255,153,0,1),
+    0 0 12px rgba(255,0,0,1),
+    0 0 16px rgba(255,0,0,1),
+    0 0 20px rgba(255,0,0,1),
+    0 0 40px rgba(255,0,0,1);
+}
+
 .background {
     /* Flexbox stuff */
     -ms-box-orient: horizontal;
