@@ -95,6 +95,13 @@ a:visited {
     color: #006767;
 }
 
+.home-btn {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  margin-left: -56px;
+}
+
 .bg-teal {
     background-color: #008080 !important;
 }
@@ -209,6 +216,10 @@ a:visited {
 
 .hero.resume.employment {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
+}
+
+.hero-inner {
+    margin: 50px;
 }
 
 .hero-inner.employment {
