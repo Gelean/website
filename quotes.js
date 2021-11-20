@@ -471,7 +471,7 @@ var quotesArray = [
     ["Sweat saves blood.", "Erwin Rommel"],
     ["Taught never to retreat, never to surrender. Taught that death on the battlefield in service to Sparta was the greatest glory he could achieve in his life.", "Dilios, 300"],
     ["Tell me with whom you consort and I will tell you who you are; if I know how you spend your time, then I know what might become of you.", "Johann Wolfgang von Goethe"],
-    ["Tell my tale to those who ask. Tell it truly, the ill deeds along with the good, and let me be judged accordingly. The rest... is silence.", "Dinobot, BBeast Wars: Transfomers"],
+    ["Tell my tale to those who ask. Tell it truly, the ill deeds along with the good, and let me be judged accordingly. The rest... is silence.", "Dinobot, Beast Wars: Transfomers"],
     ["Terrorism is the price of empire. If you do not wish to pay the price, you must give up the empire.", "Pat Buchanan"],
     ["The Catholic Church is an institution I am bound to hold divine – but for unbelievers a proof of its divinity might be found in the fact that no merely human institution conducted with such knavish imbecility would have lasted a fortnight.", "Hilaire Belloc"],
     ["The Empire's debts grow legion.", "Zargabaath, Final Fantasy XII"],
