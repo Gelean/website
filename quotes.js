@@ -423,7 +423,7 @@ var quotesArray = [
     ["Pale Death beats equally at the poor man's gate and at the palaces of kings.", "Horace"],
     ["People aren't against you; they are for themselves.", "Unknown"],
     ["People don't have ideas. Ideas have people.", "Carl Jung"],
-    ["People should not be afraid of their governments, governments should afraid of their people.", "V, V for Vendetta"],
+    ["People should not be afraid of their governments, governments should be afraid of their people.", "V, V for Vendetta"],
     ["People tend to take pride in who they are. And that's a bad idea, because that stops you from becoming who you could be. Because, if you're proud of who you are, you won't let that go when it's necessary.", "Jordan B. Peterson"],
     ["Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.", "Antoine de Saint-Exupery"],
     ["Physical books are more than the words they contain. They're also tools to stimulate your senses and adjust your thinking.", "Shogo Makishima"],
