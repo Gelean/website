@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.5">
-		<meta http-equiv="cache-control" content="max-age=200">
-		<title>Delder's Domain -- Home</title>
-		<link rel="shortcut icon" href="images/favicon-16x16.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style.min.css">
-	</head>
-	<body class="background home">
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-0 bg-teal">
-		    <a class="navbar-brand" href="home.html">Delder's Domain</a>
-		    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="navbar-collapse collapse" id="navbarCollapse">
-		        <ul class="navbar-nav ml-auto">
-			        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
-					<li class="nav-item"><a class="nav-link" href="sol.html">SoL</a></li>
-					<li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
-					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-		        </ul>
-		    </div>
-		</nav>
-		<section>
-			<!--
-			<video autoplay loop muted>
-				<source src="video.mp4" type="video/mp4">
-			</video>
-			-->
-			<div class="hero-inner" id="quote"></div>
-			<button type="button" class="btn btn-primary btn-sm home-btn" onclick="buttonClick()">New Quote</button>
-		</section>
-		<script src="jquery/jquery-3.4.1.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="quotes.js"></script>
-		<script>
-			window.onload = function() {
-				displayQuote();
-			};
-			function buttonClick() {
-				displayQuote();
-			};
-		</script>
-	</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="cache-control" content="max-age=200">
+    <title>Delder's Domain -- Home</title>
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+  </head>
+  <body class="background home">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-0 bg-teal">
+      <a class="navbar-brand" href="home.html">Delder's Domain</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="sol.html">SoL</a></li>
+          <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <!--
+      <video autoplay loop muted>
+          <source src="video.mp4" type="video/mp4">
+      </video>
+      -->
+      <div class="hero-inner" id="quote"></div>
+      <button type="button" class="btn btn-primary btn-sm home-btn" onclick="buttonClick()">New Quote</button>
+    </section>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="quotes.js"></script>
+    <script>
+      window.onload = function() {
+          displayQuote();
+      };
+      function buttonClick() {
+          displayQuote();
+      };
+    </script>
+  </body>
 </html>

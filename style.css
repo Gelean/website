@@ -96,10 +96,10 @@ a:visited {
 }
 
 .home-btn {
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  margin-left: -56px;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-left: -56px;
 }
 
 .bg-teal {
@@ -107,8 +107,8 @@ a:visited {
 }
 
 .navbar-toggler-icon {
-  width: 1em;
-  height: 1em;
+    width: 1em;
+    height: 1em;
 }
 
 .glow {
@@ -190,12 +190,12 @@ a:visited {
 
 .hero.resume.work {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
-    height: 10vw;
+    height: 12vw;
 }
 
 .hero.resume.education {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
-    height: 10vw;
+    height: 12vw;
 }
 
 .hero.resume {
@@ -214,8 +214,16 @@ a:visited {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/uci.jpg');
 }
 
-.hero.resume.employment {
+.hero.resume.armycorps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/915wilshire2.jpg');
+}
+
+.hero.resume.mirth {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
+}
+
+.hero.resume.flexion {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/wfh.jpg');
 }
 
 .hero-inner {
