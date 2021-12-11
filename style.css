@@ -230,10 +230,6 @@ a:visited {
     margin: 50px;
 }
 
-.hero-inner.employment {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
-}
-
 .background.about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
 }
