@@ -48,16 +48,22 @@ My personal website files for www.elderek.com
 1. Click on CORS configuration
 1. Paste the following in:
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-    <CORSRule>
-        <AllowedOrigin>*</AllowedOrigin>
-        <AllowedMethod>GET</AllowedMethod>
-        <MaxAgeSeconds>3000</MaxAgeSeconds>
-        <AllowedHeader>Authorization</AllowedHeader>    
-        <AllowedHeader>Content-Length</AllowedHeader>
-    </CORSRule>
-</CORSConfiguration>
+[
+    {
+        "AllowedHeaders": [
+            "Authorization",
+            "Content-Length"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]
 ```
 30. Click Save
 1. Optional: Enable Content-Encoding gzip compression per https://www.thepolyglotdeveloper.com/2018/10/serving-gzipped-javascript-files-amazon-s3/, see also: https://stackoverflow.com/questions/18456535/aws-s3-returns-200ok-parser-fails-if-contentencoding-gzip, https://stackoverflow.com/questions/5442011/serving-gzipped-css-and-javascript-from-amazon-cloudfront-via-s3
