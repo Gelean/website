@@ -543,6 +543,7 @@ var quotesArray = [
     ["Put your money where your mouth is.", "Idiom"],
     ["Qui cum canibus concumbunt cum pulicibus surgent (He that lieth down with dogs shall rise up with fleas).", "Latin Proverb"],
     ["Quis custodiet ipsos custodes (Who will guard the guards themselves)?", "Juvenal"],
+    ["Rebellion to tyrants is obedience to God.", "Benjamin Franklin"],
     ["Reject your sense of injury and the injury itself disappears.", "Marcus Aurelius"],
     ["Remember, democracy never lasts long. It soon wastes, exhausts, and murders itself. There never was a democracy yet that did not commit suicide.", "John Adams"],
     ["Remember, no human condition is ever permanent: then you will not be overjoyed in good fortune, not too sorrowful in misfortune.", "Socrates"],
