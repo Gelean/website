@@ -226,6 +226,10 @@ a:visited {
    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/wfh.jpg');
 }
 
+.hero.resume.openpath {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/600corporatepointe.jpg');
+ }
+
 .hero-inner {
     margin: 50px;
 }
