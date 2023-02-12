@@ -8,20 +8,20 @@ My personal website files for www.elderek.com
 1. Go to Services > Route 53
 1. On the left hand side click on Registered domains under Domains
 1. Click Register Domain
-1. Enter in your desired domain name
-1. Enter in your contact details
-1. Verify your details and click on purchase
+1. Enter in your desired domain name, check if it's available, and click Continue
+1. Enter in your contact details and click Continue
+1. Verify your details and click Purchase
 1. Verify your email through the link Amazon sends you
 1. Wait a little while for the domain to be registered (the time for this step can vary)
 1. Go to Services > S3
 1. Click on Create bucket
 1. Use your website domain name for the bucket name (ex: www.elderek.com)
-1. Choose a region close to you and click Next
-1. Uncheck Block All Public Access
+1. Choose a region for the bucket
+1. Uncheck Block all public access
 1. Click Create bucket
 1. Click on the bucket name to go into the bucket
 1. Click the Upload button
-1. Add all of your website files and then Next
+1. Drag over all of your website files and then click Upload
 1. Click on the Properties tab
 1. Click on Static website hosting
 1. Click Use this bucket to host a website
