@@ -24,6 +24,7 @@ html {
         url('fonts/Nine.svg#Nine') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
 }
 
 @keyframes glow {
@@ -89,10 +90,6 @@ p {
 
 a, a:hover {
     color: #008080;
-}
-
-a:visited {
-    color: #006767;
 }
 
 .home-btn {
@@ -235,6 +232,10 @@ a:visited {
 }
 
 .background.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
+}
+
+.background.interests {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
 }
 
