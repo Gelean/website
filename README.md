@@ -104,11 +104,11 @@ My personal website files for www.elderek.com
 
 ### Setup the Docker container
 
-1. cd to the location of the website folder
-1. docker build -t elderek-website-image:1.0 .
+1. cd to the root of the website folder
+1. docker build -t elderek-website-image:latest -f docker/Dockerfile .
 1. docker run -itd --name elderek-website-image-container --publish 8080:80 elderek-website-image:1.0
 1. docker ps -a
-1. Visit http://localhost:8080
+1. Visit http://localhost:8080/home.html
 
 ### Tear down the Docker container
 

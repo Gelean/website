@@ -1,3 +1,10 @@
+/*
+// Removes rounded corners
+* {
+    border-radius: 0 !important;
+}
+*/
+
 ::-moz-selection {
     color: black;
     background: #008080;
@@ -16,12 +23,12 @@ html {
 
 @font-face {
     font-family: 'Nine';
-    src: url('fonts/Nine.eot');
-    src: url('fonts/Nine.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Nine.woff2') format('woff2'),
-        url('fonts/Nine.woff') format('woff'),
-        url('fonts/Nine.ttf') format('truetype'),
-        url('fonts/Nine.svg#Nine') format('svg');
+    src: url('../fonts/Nine.eot');
+    src: url('../fonts/Nine.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nine.woff2') format('woff2'),
+        url('../fonts/Nine.woff') format('woff'),
+        url('../fonts/Nine.ttf') format('truetype'),
+        url('../fonts/Nine.svg#Nine') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -156,7 +163,27 @@ a, a:hover {
 }
 
 .background.home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torrance.jpg');
+}
+
+.btn-completed {
+    background-color: #008080;
+    color: #FFFFFF;
+}
+
+.btn-completed:hover {
+    background-color: #FFFFFF;
+    color: #008080;
+}
+
+.btn-uncompleted {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+.btn-uncompleted:hover {
+    background-color: #FFFFFF;
+    color: #808080;
 }
 
 .hero {
@@ -178,7 +205,7 @@ a, a:hover {
     align-items: center;
     
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torrance.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torrance.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: repeat-y;
@@ -186,45 +213,45 @@ a, a:hover {
 }
 
 .hero.resume.work {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/dwight.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/dwight.jpg');
     height: 12vw;
 }
 
 .hero.resume.education {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/education.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/education.png');
     height: 12vw;
 }
 
 .hero.resume {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/torranceview-min.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torranceview-min.jpg');
 }
 
 .hero.resume.south {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/shs.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/shs.jpg');
 }
 
 .hero.resume.elcamino {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/elcamino.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/elcamino.jpg');
 }
 
 .hero.resume.uci {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/uci.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/uci.jpg');
 }
 
 .hero.resume.armycorps {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/915wilshire2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/915wilshire2.jpg');
 }
 
 .hero.resume.mirth {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/611anton.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/611anton.jpg');
 }
 
 .hero.resume.flexion {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/wfh.jpg');
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/wfh.jpg');
 }
 
 .hero.resume.openpath {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/600corporatepointe.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/600corporatepointe.jpg');
  }
 
 .hero-inner {
@@ -232,23 +259,23 @@ a, a:hover {
 }
 
 .background.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Delder by Dylan.jpg');
 }
 
 .background.interests {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Delder by Dylan.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Delder by Dylan.jpg');
 }
 
 .background.writing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Elderproject.bmp');
 }
 
 .background.contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/Elderproject.bmp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Elderproject.bmp');
 }
 
 .background.sol {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/SoL logo by Evan Mod.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/SoL logo by Evan Mod.jpg');
 }
 
 .video {
