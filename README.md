@@ -1,8 +1,10 @@
 # Delder's Domain
 
-My personal website files for www.elderek.com
+My personal website files for www.elderek.com and www.derekmelder.com
 
 ## Hosting a static website in AWS
+
+### Manual Steps:
 
 1. Login to https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2 (or set up an account if you don't have one)
 1. Go to Services > Route 53
@@ -99,6 +101,16 @@ My personal website files for www.elderek.com
 1. Click Save Record Set
 1. Leave Routing Policy and Evaluate Target Health alone
 1. Now type your website into your browser and confirm both addresses (ex: elderek.com and www.elderek.com) are working
+
+### Using create-website.py
+
+1. Read: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+1. Install aws-cli
+1. Configure aws-cli credentials with aws configure
+1. Install Python 3
+1. pip install boto3 PyYaml
+1. Update the region, domain_name, and stack_name varibales in create-website.py
+1. py create-website.py
 
 ## Docker image
 
