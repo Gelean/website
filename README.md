@@ -4,7 +4,7 @@ My personal website files for www.elderek.com and www.derekmelder.com
 
 ## Hosting a static website in AWS
 
-### Manual Steps:
+### Manual Steps
 
 1. Login to https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2 (or set up an account if you don't have one)
 1. Go to Services > Route 53
