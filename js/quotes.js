@@ -165,6 +165,7 @@ var quotesArray = [
     ["Come unto me, all ye that labour and are heavy laden, and I will give you rest.", "Matthew 11:28"],
     ["Comedy aims at representing men as worse, Tragedy as better than in actual life.", "Aristotle"],
     ["Comfort is the enemy of achievement.", "Farrah Gray"],
+    ["Communism is when ugly deformed freaks make it illegal to be normal then rob and/or kill all successful people out of petty resentment and cruelty. The ideology is all just window dressing.", "Mystery Grove"],
     ["Comparison is the death of true self-contentment.", "John Powell"],
     ["Comparison is the thief of joy.", "Theodore Roosevelt"],
     ["Compound interest is the most powerful force in the universe.", "Albert Einstein"],
@@ -278,6 +279,7 @@ var quotesArray = [
     ["God gives the nuts, but he does not crack them.", "Franz Kafka"],
     ["God smiles on results.", "Mamun, Last Argument of Kings"],
     ["Godless? Why, Aeron, I am the godliest man ever to raise sail! You serve one god, Damphair, but I have served ten thousand. From Ib to Asshai, when men see my sails, they pray.", "Euron Greyjoy, A Feast for Crows"],
+    ["Good writing is clear thinking made visible.", "William Wheeler"],
     ["Gorghan of Old Ghis once wrote that a prophecy is like a treacherous woman. She takes your member in her mouth, and you moan with the pleasure of it and think, how sweet, how fine, how good this is...and then her teeth snap shut and your moans turn to screams. That is the nature of prophecy, said Gorghan. Prophecy will bite your prick off every time.", "Marwyn, A Feast for Crows"],
     ["Government, even in its best state, is but a necessary evil; in its worst state, an intolerable one.", "Thomas Paine"],
     ["Great is the weapon that cuts on its own.", "The Narrator, Darkest Dungeon"],
@@ -395,6 +397,7 @@ var quotesArray = [
     ["If someone stands in the way of true justice, you just walk up behind him, and stab him in the heart.", "Ra's al Ghul, Batman Begins"],
     ["If the brain were so simple we could understand it, we would be so simple we couldn't.", "Lyall Watson"], 
     ["If the fool is the one that turns culture upside down, then the fool is also the one who always turns it around and sets things right.", "Jonathan Pageau"],
+    ["If the world is against the truth, then I am against the world.", "St. Athanasius"],
     ["If there arose to-morrow a band of fanatics advocating cannibalism that was as daring in political enterprise and as skilful in rounding up morons as the Anti-Saloon league was in 1919, two Congressmen out of three would be converted to its gospel instantly, and three public-school teachers out of four would probably be serving it as evangelists within a month.", "H. L. Mencken"],
     ["If there be time to expose through discussion, the falsehoods and fallacies, to avert the evil by the processes of education, the remedy to be applied is more speech, not enforced silence.", "Louis Brandeis"],
     ["If there is no struggle, there is no progress.", "Frederick Douglass"],
@@ -533,7 +536,9 @@ var quotesArray = [
     ["Make your friends rich and your enemies rich and wait to find out which is which.", "Ultron, Avengers: Age of Ultron"],
     ["Man has but three events in his life: to be born, to live, and to die. He is not conscious of his birth, he suffers at his death and he forgets to live.", "Jean de la Bruyere"],
     ["Man wants to be the king o' rabbits, he best wear a pair o' floppy ears.", "Brown Ben, A Dance with Dragons"],
+    ["Man's three foes are the Devil, the State, and technology.", "Nicolas Gomez Davila"],
     ["Manners maketh man.", "William Horman"],
+    ["Many a philosopher loves the Tatars so as not to love his neighbor.", "Jean-Jacques Rousseau"],
     ["Many hands make light work.", "Proverb"],
     ["Many have served Him of Many Faces through the centuries, but only a few of His servants have been women. Women bring life into the world. We bring the gift of death. No one can do both.", "The Kindly Man, A Feast for Crows"],
     ["Many that live deserve death. And some that die deserve life. Can you give it to them? Then do not be too eager to deal out death in judgment.", "Gandalf, The Fellowship of the Ring"],
@@ -606,6 +611,7 @@ var quotesArray = [
     ["Nothing is so permanent as a temporary government program.", "Milton Friedman"],
     ["Nothing's over while I'm breathing!", "Quaritch, Avatar"],
     ["Now I am become Death, the destroyer of worlds.", "Vishnu, Bhagavad Gita"],
+    ["Now we are suffering the evils of too long a peace. Luxury, deadlier than any armed invader, lies like an incubus upon us still, avenging the world we brought to heel.", "Juvenal, Satire VI"],
     ["Numberless are the world's wonders, but none more wonderful than man.", "Sophocles"],
     ["Oberyn Martell: Have they told you who I am?<br>Gregor Clegane: Some dead man.", "A Storm of Swords"],
     ["Of all men's miseries the bitterest is this: to know so much and to have control over nothing.", "Herodotus"],
@@ -643,6 +649,7 @@ var quotesArray = [
     ["Pain is temporary, glory is eternal.", "Proverb"],
     ["Pale Death beats equally at the poor man's gate and at the palaces of kings.", "Horace"],
     ["Pay no heed to the derision and mockery of the wicked. Have courage; you must never yield, nor is there any need to yield. You must go into the attack whole-heartedly, not in secret but in public, not behind barred doors, but in the open, in the view of all.", "Pope Pius X"],
+    ["Peace has cost you your strength. Victory has defeated you.", "Bane to Batman, The Dark Knight Rises"],
     ["People are neither basically good or basically bad, they are basically animals. You should not expect them to act rationally or even in their best interests.", "Michael Malice"],
     ["People aren't against you; they are for themselves.", "Unknown"],
     ["People don't have ideas. Ideas have people.", "Carl Jung"],
@@ -806,6 +813,7 @@ var quotesArray = [
     ["The journey of a thousand miles begins with a single step.", "Lao Tzu"],
     ["The law, in its majestic equality, forbids rich and poor alike to sleep under bridges, to beg in the streets, and to steal their bread.", "Anatole France"],
     ["The line separating good and evil passes not through states, nor between classes, nor between political parties either -- but right through every human heart -- and through all human hearts. This line shifts. Inside us, it oscillates with the years. And even within hearts overwhelmed by evil, one small bridgehead of good is retained.", "Aleksandr Solzhenitsyn"],
+    ["The lips of wisdom are closed, except to the ears of understanding.", "The Kybalion"],
     ["The majority cannot reason; it has no judgment. It has always placed its destiny in the hands of others; it has followed its leaders even into destruction. The mass has always opposed, condemned, and hounded the innovator, the pioneer of a new truth.", "Emma Goldman"],
     ["The man is the head, but the woman is the neck. And she can turn the head any way she wants.", "Maria Portokalos to Fotoula Portokalos, My Big Fat Greek Wedding"],
     ["The man who first flung a word of abuse at his enemy instead of a spear was the founder of civilisation.", "John Hughlings Jackson"],
@@ -841,6 +849,7 @@ var quotesArray = [
     ["The past is a foreign country; they do things differently there.", "L. P. Hartley"],
     ["The pen is mightier than the sword.", "Cardinal Richelieu, Richelieu; Or the Conspiracy"],
     ["The pen is the tongue of the mind.", "Horace"],
+    ["The perfect blossom is a rare thing. You could spend your entire life looking for one, and it would not be a wasted life.", "Katsumoto, The Last Samurai"],
     ["The person who lets down the drawbridge for the enemy is the first one killed.", "Unknown"],
     ["The physician can bury his mistakes, but the architect can only advise his client to plant vines.", "Frank Lloyd Wright"],
     ["The precepts of the law are these: to live honestly, to injure no one, and to give everyone else his due.", "Marcus Tullius Cicero"],
@@ -870,6 +879,7 @@ var quotesArray = [
     ["The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants.", "Thomas Jefferson"],
     ["The true test of civilization is, not the census, nor the size of cities, nor the crops - no, but the kind of man the country turns out.", "Ralph Waldo Emerson"],
     ["The truth burns you.", "Witch Doctor, Diablo III"],
+    ["The truth has never denied the seeker. It's the seeker who denies the truth.", "Unknown"],
     ["The truth is something that burns. It burns off dead wood. And people don't like having the dead wood burnt off, often because they're ninety five percent dead wood.", "Jordan B. Peterson"],
     ["The two most powerful warriors are patience and time.", "Leo Tolstoy"],
     ["The tyrant will always find a pretext for his tyranny, and it is useless for the innocent to try by reasoning to get justice, when the oppressor intends to be unjust.", "Aesop"],
@@ -895,6 +905,7 @@ var quotesArray = [
     ["There are many like you, good men in service to bad causes.", "Varys to Kevan Lannister, A Dance with Dragons"],
     ["There are no men like me. There's only me.", "Jaime Lannister, Game of Thrones"],
     ["There are no rationalists. We all believe fairy-tales, and live in them.", "G. K. Chesterton"],
+    ["There are no solutions. There are only trade-offs.", "Thomas Sowell"],
     ["There are no true knights, no more than there are gods. If you can't protect yourself, die and get out of the way of those who can. Sharp steel and strong arms rule this world, don't ever believe any different.", "Sandor Clegane, A Clash of Kings"],
     ["There are no two words in the English language more harmful than good job.", "Terence Fletcher, Whiplash"],
     ["There are those who seek knowledge for the sake of knowledge; that is Curiosity. There are those who seek knowledge to be known by others; that is Vanity. There are those who seek knowledge in order to serve; that is Love.", "Bernard of Clairvaux"],
@@ -1047,6 +1058,7 @@ var quotesArray = [
     ["When bad men combine, the good must associate; else they will fall one by one, an unpitied sacrifice in a contemptible struggle.", "Edmund Burke"],
     ["When goods don't cross borders, soldiers will.", "Frederic Bastiat"],
     ["When injustice becomes law, rebellion becomes duty.", "Thomas Jefferson"],
+    ["When law and morality contradict each other, the citizen has the cruel alternative of either losing his moral sense or losing his respect for the law.", "Frederic Bastiat"],
     ["When people get used to preferential treatment, equal treatment seems like discrimination.", "Thomas Sowell"],
     ["When soldiers lack discipline, the fault lies with their commander.", "Tywin Lannister, Game of Thrones"],
     ["When the aristocracy catches a cold, as it is said, the working class dies of pneumonia.", "Jordan B. Peterson"],
@@ -1139,3 +1151,11 @@ function displayQuote() {
 	var rand = Math.floor(Math.random() * (quotesArray.length));
 	document.getElementById('quote').innerHTML = "<h2>\"" + quotesArray[rand][0] + "\"</h2>" + "- " + quotesArray[rand][1];
 }
+
+window.onload = function() {
+    displayQuote();
+};
+
+function buttonClick() {
+    displayQuote();
+};
