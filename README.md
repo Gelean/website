@@ -109,7 +109,7 @@ My personal website files for www.elderek.com and www.derekmelder.com
 1. Configure aws-cli credentials with aws configure
 1. Install Python 3
 1. pip install boto3 PyYaml
-1. Update the region, domain_name, and stack_name varibales in create-website.py
+1. Update the region, domain_name, and stack_name variables in create-website.py
 1. py create-website.py
 
 ## Docker image
