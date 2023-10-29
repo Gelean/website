@@ -159,24 +159,16 @@ a, a:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torrance.jpg');
 }
 
-.btn-completed {
+.btn-teal {
     background-color: #008080;
     color: #FFFFFF;
 }
 
-.btn-completed:hover {
-    background-color: #FFFFFF;
-    color: #008080;
-}
-
-.btn-uncompleted {
-    background-color: #808080;
+.btn-teal:hover,
+.btn-teal:focus,
+.btn-teal:active {
+    background-color: #006666;
     color: #FFFFFF;
-}
-
-.btn-uncompleted:hover {
-    background-color: #FFFFFF;
-    color: #808080;
 }
 
 .hero {
