@@ -42,7 +42,7 @@ jobs:
         run: sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
       - name: Run Lighthouse Audit
-        run: lighthouse --output=htnml --output-path=./lighthouse-report.html --save-assets --chrome-flags="--headless --no-sandbox" https://www.derekmelder.com/
+        run: lighthouse --output=html --output-path=./lighthouse-report.html --save-assets --chrome-flags="--headless --no-sandbox" https://www.derekmelder.com/
 
       - name: Save Report
         uses: actions/upload-artifact@v3
