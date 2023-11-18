@@ -14,7 +14,6 @@ COPY writing.html ${HTML_PATH}/writing.html
 COPY bootstrap ${HTML_PATH}/bootstrap
 COPY fonts ${HTML_PATH}/fonts
 COPY images ${HTML_PATH}/images
-COPY jquery ${HTML_PATH}/jquery
 COPY css ${HTML_PATH}/css
 COPY js ${HTML_PATH}/js
 COPY ${RESUME_DOC} ${HTML_PATH}/${RESUME_DOC}
