@@ -76,61 +76,65 @@ def upload_files_from_dir(path):
 # Run Cloudformation script to set up the S3 bucket, SSL certificate, Cloudfront distribution, and other resources
 try:
     data = cloudformation_client.describe_stacks(StackName = stack_name)
-    print('Stack already exists, updating')
-    cf_template = open(cloudformation_file).read()
-    response = cloudformation_client.update_stack(
-        StackName=stack_name,
-        TemplateBody=cf_template,
-        Parameters=[
-            { 'ParameterKey': 'DomainName', 'ParameterValue': domain_name },
-            { 'ParameterKey': 'HostedZoneId', 'ParameterValue': 'Z0964632EZ0WHJY58ADN' },
-            { 'ParameterKey': 'PriceClass', 'ParameterValue': 'PriceClass_100' }
-        ],
-        Capabilities=['CAPABILITY_IAM']
-    )
+    if data['Stacks'][0]['StackName'] == stack_name:
+        print('Stack already exists, updating')
+        cf_template = open(cloudformation_file).read()
+        response = cloudformation_client.update_stack(
+            StackName=stack_name,
+            TemplateBody=cf_template,
+            Parameters=[
+                { 'ParameterKey': 'DomainName', 'ParameterValue': domain_name },
+                { 'ParameterKey': 'HostedZoneId', 'ParameterValue': 'Z0964632EZ0WHJY58ADN' },
+                { 'ParameterKey': 'PriceClass', 'ParameterValue': 'PriceClass_100' }
+            ],
+            Capabilities=['CAPABILITY_IAM']
+        )
 
-    # Wait for stack to update before uploading files
-    sys.stdout.write('Waiting for the Cloudformation stack update to finish')
-    stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
-    while stack_status != 'UPDATE_COMPLETE':
-        # Try again every thirty seconds until the stack has finished updating
-        for i in range(10,0,-1):
-            sys.stdout.write('.')
-            sys.stdout.flush()
-            time.sleep(1)
+        # Wait for stack to update before uploading files
+        sys.stdout.write('Waiting for the Cloudformation stack update to finish')
         stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
-        if stack_status in ['UPDATE_ROLLBACK_COMPLETE', 'ROLLBACK_COMPLETE', 'DELETE_COMPLETE', 'IMPORT_COMPLETE', 'IMPORT_ROLLBACK_COMPLETE']:
-            print('An error has occurred. The stack status is reporting: {}, please investigate'.format(stack_status))
-            exit(1)
-except ClientError:
-    print('Stack does not exist, creating {}'.format(stack_name))
-    cf_template = open(cloudformation_file).read()
-    response = cloudformation_client.create_stack(
-        StackName=stack_name,
-        TemplateBody=cf_template,
-        Parameters=[
-            { 'ParameterKey': 'DomainName', 'ParameterValue': domain_name },
-            { 'ParameterKey': 'HostedZoneId', 'ParameterValue': 'Z0964632EZ0WHJY58ADN' },
-            { 'ParameterKey': 'PriceClass', 'ParameterValue': 'PriceClass_100' }
-        ],
-        Capabilities=['CAPABILITY_IAM']
-    )
+        while stack_status != 'UPDATE_COMPLETE':
+            # Try again every thirty seconds until the stack has finished updating
+            for i in range(10,0,-1):
+                sys.stdout.write('.')
+                sys.stdout.flush()
+                time.sleep(1)
+            stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
+            if stack_status in ['UPDATE_ROLLBACK_COMPLETE', 'ROLLBACK_COMPLETE', 'DELETE_COMPLETE', 'IMPORT_COMPLETE', 'IMPORT_ROLLBACK_COMPLETE']:
+                print('An error has occurred. The stack status is reporting: {}, please investigate'.format(stack_status))
+                exit(1)
+except ClientError as error:
+    if str(error) == "An error occurred (ValidationError) when calling the UpdateStack operation: No updates are to be performed.":
+        print("The stack exists, but there are no updates to be performed, skipping the CloudFormation update step.")
+    elif str(error) == f"An error occurred (ValidationError) when calling the DescribeStacks operation: Stack with id {stack_name} does not exist":
+        print('Stack does not exist, creating {}'.format(stack_name))
+        cf_template = open(cloudformation_file).read()
+        response = cloudformation_client.create_stack(
+            StackName=stack_name,
+            TemplateBody=cf_template,
+            Parameters=[
+                { 'ParameterKey': 'DomainName', 'ParameterValue': domain_name },
+                { 'ParameterKey': 'HostedZoneId', 'ParameterValue': 'Z0964632EZ0WHJY58ADN' },
+                { 'ParameterKey': 'PriceClass', 'ParameterValue': 'PriceClass_100' }
+            ],
+            Capabilities=['CAPABILITY_IAM']
+        )
 
-    # Wait for stack to be created before uploading files
-    sys.stdout.write('Waiting for the Cloudformation stack creation to finish')
-    stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
-    while stack_status != 'CREATE_COMPLETE':
-        # Try again every thirty seconds until the stack is available
-        for i in range(30,0,-1):
-            sys.stdout.write('.')
-            sys.stdout.flush()
-            time.sleep(1)
+        # Wait for stack to be created before uploading files
+        sys.stdout.write('Waiting for the Cloudformation stack creation to finish')
         stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
-        if stack_status in ['UPDATE_ROLLBACK_COMPLETE', 'ROLLBACK_COMPLETE', 'DELETE_COMPLETE', 'IMPORT_COMPLETE', 'IMPORT_ROLLBACK_COMPLETE']:
-            print('An error has occurred. The stack status is reporting: {}, please investigate'.format(stack_status))
-            exit(1)
+        while stack_status != 'CREATE_COMPLETE':
+            # Try again every thirty seconds until the stack is available
+            for i in range(30,0,-1):
+                sys.stdout.write('.')
+                sys.stdout.flush()
+                time.sleep(1)
+            stack_status = cloudformation_client.describe_stacks(StackName=stack_name)['Stacks'][0]['StackStatus']
+            if stack_status in ['UPDATE_ROLLBACK_COMPLETE', 'ROLLBACK_COMPLETE', 'DELETE_COMPLETE', 'IMPORT_COMPLETE', 'IMPORT_ROLLBACK_COMPLETE']:
+                print('An error has occurred. The stack status is reporting: {}, please investigate'.format(stack_status))
+                exit(1)
 
-print('\nFiles are being uploaded')
+print('Files are being uploaded')
 
 # Pick up html, doc, and pdf files in the root folder
 types = ('*.html', '*.doc', '*.pdf')
