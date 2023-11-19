@@ -24,7 +24,7 @@ html {
         url('../fonts/Nine.svg#Nine') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: block;
+    font-display: swap;
 }
 
 @keyframes glow {
