@@ -479,7 +479,7 @@ var quotesArray = [
     ["In hoc signo vinces (In this sign thou shalt conquer)", "Constantine's Labarum"],
     ["In nothing do men more nearly approach the gods than in giving health to men.", "Marcus Tullius Cicero"],
     ["In place of a Dark Lord, you would have a queen! Not dark, but beautiful and terrible as the dawn! Treacherous as the sea! Stronger than the foundations of the earth! All shall love me, and despair!", "Galadriel, The Fellowship of the Ring"],
-    ["In preparing for battle I have always found that plans are useless, but planning is indispensable.", "Dwight Eisenhower"],
+    ["In preparing for battle I have always found that plans are useless, but planning is indispensable.", "Dwight D. Eisenhower"],
     ["In science you must not talk before you know. In art you must not talk before you do. In literature you must not talk before you think.", "John Ruskin"],
     ["In sterquiliniis invenitur (in filth it shall be found).", "Carl Jung"],
     ["In the absence of light, darkness prevails.", "Trevor Bruttenholm, Hellboy"],
@@ -694,6 +694,7 @@ var quotesArray = [
     ["One of the things Jung said is everybody acts out a myth but very few people know what their myth is and you should know what your myth is because it might be a tragedy and maybe you don't want it to be.", "Jordan B. Peterson"],
     ["One scabbed sheep mars the whole flock.", "Proverb"],
     ["One seldom recognizes the devil when he is putting his hand on your shoulder.", "Albert Speer"],
+    ["Only Americans can hurt America.", "Dwight D. Eisenhower"],
     ["Only a fool fights a battle he knows he cannot win.", "Genghis Khan"],
     ["Only a fool learns from his own mistakes. The wise man learns from the mistakes of others.", "Otto von Bismarck"],
     ["Only a warrior chooses pacifism; others are condemned to it.", "Eduardo Garcia"],
@@ -1255,7 +1256,7 @@ var quotesArray = [
 
 function displayQuote() {
 	var rand = Math.floor(Math.random() * (quotesArray.length));
-	document.getElementById('quote').innerHTML = "<h2>\"" + quotesArray[rand][0] + "\"</h2>" + "- " + quotesArray[rand][1];
+	document.getElementById('quote').innerHTML = "<h2>\"" + quotesArray[rand][0] + "\"</h2>" + "<h4>- " + quotesArray[rand][1] + "</h4>";
 }
 
 window.onload = function() {
