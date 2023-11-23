@@ -1,11 +1,51 @@
+/* Default: Dark Mode */
+:root {
+    --primary-color-lightest: #33A0A0;
+    --primary-color-light: #139696;
+    --primary-color: #008080;
+    --primary-color-dark: #006868;
+    --primary-color-darkest: #004F4F;
+
+    --secondary-color-lightest: #FFBE51;
+    --secondary-color-light: #FBA920;
+    --secondary-color: #D58500;
+    --secondary-color-dark: #AE6D00;
+    --secondary-color-darkest: #845300;
+
+    --accent-color-lightest: #FF6C51;
+    --accent-color-light: #FB4220;
+    --accent-color: #D52100;
+    --accent-color-dark: #AE1B00;
+    --accent-color-darkest: #841500;
+
+    --text-color: #FFFFFF;
+    --selection-color: #000000;
+
+    --opacity: 0.5;
+    --background-image-gradient: rgba(0, 0, 0, var(--opacity)),rgba(0, 0, 0, var(--opacity));
+}
+
+.light-mode {
+    --primary-color: #FFFFFF;
+    --primary-color-dark: #E0E0E0;
+
+    --text-color: #000000;
+    --selection-color: #FFFFFF;
+
+    --opacity: 0;
+    --background-image-gradient: rgba(255, 255, 255, var(--opacity)),rgba(255, 255, 255, var(--opacity));
+}
+
 ::-moz-selection {
-    color: black;
-    background: #008080;
+    color: var(--selection-color);
+    background: var(--primary-color);
+    text-shadow: none;
 }
 
 ::selection {
-    color: black;
-    background: #008080;
+    color: var(--selection-color);
+    background: var(--primary-color);
+    text-shadow: none;
 }
 
 html {
@@ -67,29 +107,32 @@ body {
     /* Text styles */
     font-family: 'Nine', serif;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
 
-    /* Background styles */
+    /* Default Background styles */
     background: rgb(0,50,50);
     background: linear-gradient(0deg, rgba(0,50,50,1) 0%, rgba(0,82,82,1) 50%, rgba(0,99,99,1) 100%);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
+    color: #FFFFFF;
+	text-shadow: -1px 1px 2px #000000, 1px 2px 6px #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 }
 
 p {
-    /* Sizing */
     text-align: left;
     justify-content: left;
     align-items: left;
     margin: 10px 50px 10px 50px;
     padding: 0 120px 0 120px;
+    color: #FFFFFF;
+	text-shadow: -1px 1px 2px #000000, 1px 2px 6px #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 }
 
 a, a:hover {
-    color: #008080;
+    color: var(--primary-color);
 }
 
 .home-btn {
@@ -100,7 +143,7 @@ a, a:hover {
 }
 
 .bg-teal {
-    background-color: #008080 !important;
+    background-color: var(--primary-color) !important;
 }
 
 .navbar-toggler-icon {
@@ -120,7 +163,7 @@ a, a:hover {
     height: 2px;
     width: 100%;
     content: "";
-    background-color: #FFFFFF;
+    background-color: var(--text-color);
 }
 
 .navbar .navbar-nav .nav-item {
@@ -137,16 +180,19 @@ a, a:hover {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #FFFFFF;
+    background-color: var(--text-color);
     width: 0%;
     content: "";
     height: 2px;
     transition: all 0.5s;
 }
 
+.navbar-brand {
+    color: var(--text-color) !important;
+}
+
 .nav-link {
-    color: #FFFFFF !important;
-    /*opacity: 0.75;*/
+    color: var(--text-color) !important;
 }
 
 .glow {
@@ -197,19 +243,23 @@ a, a:hover {
 }
 
 .background.home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torrance.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/torrance.jpg');
 }
 
 .btn-teal {
-    background-color: #008080;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .btn-teal:hover,
 .btn-teal:focus,
 .btn-teal:active {
-    background-color: #006666;
-    color: #FFFFFF;
+    background-color: var(--primary-color-dark);
+    color: var(--text-color);
+}
+
+#light-mode-toggle {
+    cursor: pointer;
 }
 
 .hero {
@@ -231,7 +281,7 @@ a, a:hover {
     align-items: center;
     
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torrance.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/torrance.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: repeat-y;
@@ -239,45 +289,45 @@ a, a:hover {
 }
 
 .hero.resume.work {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/dwight.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/dwight.jpg');
     height: 12vw;
 }
 
 .hero.resume.education {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/education.png');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/education.png');
     height: 12vw;
 }
 
 .hero.resume {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/torranceview-min.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/torranceview-min.jpg');
 }
 
 .hero.resume.south {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/shs.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/shs.jpg');
 }
 
 .hero.resume.elcamino {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/elcamino.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/elcamino.jpg');
 }
 
 .hero.resume.uci {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/uci.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/uci.jpg');
 }
 
 .hero.resume.armycorps {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/915wilshire2.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/915wilshire2.jpg');
 }
 
 .hero.resume.mirth {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/611anton.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/611anton.jpg');
 }
 
 .hero.resume.flexion {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/wfh.jpg');
+   background-image: linear-gradient(var(--background-image-gradient)), url('../images/wfh.jpg');
 }
 
 .hero.resume.openpath {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/600corporatepointe.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/600corporatepointe.jpg');
  }
 
 .hero-inner {
@@ -285,23 +335,23 @@ a, a:hover {
 }
 
 .background.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Delder by Dylan.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/Delder by Dylan.jpg');
 }
 
 .background.interests {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Delder by Dylan.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/Delder by Dylan.jpg');
 }
 
 .background.writing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Elderproject.bmp');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/Elderproject.bmp');
 }
 
 .background.contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/Elderproject.bmp');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/Elderproject.bmp');
 }
 
 .background.sol {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/SoL logo by Evan Mod.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/SoL logo by Evan Mod.jpg');
 }
 
 .video {
