@@ -108,28 +108,29 @@ My personal website files for www.elderek.com and www.derekmelder.com
 1. Install aws-cli
 1. Configure aws-cli credentials with aws configure
 1. Install Python 3
-1. pip install boto3 PyYaml
+1. ```pip install boto3 PyYaml```
 1. Update the region, domain_name, and stack_name variables in create-website.py
-1. py create-website.py
+1. ```py create-website.py```
 
 ## Docker image
 
 ### Setup the Docker container
 
-1. cd to the root of the website folder
-1. docker build -t elderek-website-image:latest -f docker/Dockerfile .
-1. docker run -itd --name elderek-website-image-container --publish 8080:80 elderek-website-image:1.0
-1. docker ps -a
+1. ```cd to the root of the website folder```
+1. ```docker build -t elderek-website-image:latest -f docker/Dockerfile .```
+1. ```docker run -itd --name elderek-website-image-container --publish 8080:80 elderek-website-image:1.0```
+1. ```docker ps -a```
 1. Visit http://localhost:8080/home.html
 
 ### Tear down the Docker container
 
-1. docker rm $(docker stop $(docker ps -aq --filter ancestor=elderek-website-image --format="{{.ID}}"))
+
+1. ```docker rm $(docker stop $(docker ps -aq --filter ancestor=elderek-website-image --format="{{.ID}}"))```
 1. Alternate tear down commands:
-    1. docker ps -aq | xargs -n 1 docker stop
-    1. docker ps -aq | xargs -n 1 docker rm
-1. docker system prune -a
-1. docker images -a
+    1. ```docker ps -aq | xargs -n 1 docker stop```
+    1. ```docker ps -aq | xargs -n 1 docker rm```
+1. ```docker system prune -a```
+1. ```docker images -a```
 
 ## References and Code
 
