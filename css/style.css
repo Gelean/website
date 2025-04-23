@@ -1,3 +1,9 @@
+/*
+* {
+    border-radius: 0 !important;
+}
+*/
+
 /* Default: Dark Mode */
 :root {
     --primary-color-lightest: #33A0A0;
@@ -121,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-shadow: -1px 1px 2px #000000, 1px 2px 6px #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 }
 
+/* could use some work */
 p {
     text-align: left;
     justify-content: left;
@@ -376,3 +383,42 @@ a, a:hover {
     position: relative;
     z-index: 1;
 }
+
+.media-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.media-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-content {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 0.9rem;
+    }
+}
+*/

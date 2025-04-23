@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Derek Elder's interests and a list of entertainment products enjoyed">
+    <meta name="description" content="Derek Elder's interests and imbibed media">
     <meta name="author" content="Derek Elder">
     <meta http-equiv="cache-control" content="max-age=3600">
     <title>Delder's Domain -- Interests</title>
@@ -37,7 +37,7 @@
       </div>
     </nav>
     <section>
-      <h1>Interests</h1>
+      <h1>Media Owned</h1>
       <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
         <div class="p-2 bd-highlight">
           <h2>Books</h2>
@@ -61,7 +61,33 @@
         </div>
       </div>
     </section>
+    <section class="py-5 text-center container">
+    <h1>Media Imbibed</h1>
+      <div class="row mt-3 mb-4 button-group filter-button-group">
+        <div class="col d-flex justify-content-center">
+          <button type="button" data-filter="*" class="btn btn-teal btn-sm mx-1">All</button>
+          <button type="button" data-filter=".favorites" class="btn btn-teal btn-sm mx-1">Favorites</button>
+          <button type="button" data-filter=".imbibed" class="btn btn-teal btn-sm mx-1">Imbibed</button>
+          <button type="button" data-filter=".not-imbibed" class="btn btn-teal btn-sm mx-1">Not Imbibed</button>
+          <button type="button" data-filter=".films" class="btn btn-teal btn-sm mx-1">Films</button>
+          <button type="button" data-filter=".shows" class="btn btn-teal btn-sm mx-1">Television Shows</button>
+          <button type="button" data-filter=".games" class="btn btn-teal btn-sm mx-1">Games</button>
+          <button type="button" data-filter=".books" class="btn btn-teal btn-sm mx-1">Books</button>
+        </div>
+      </div>
+      <div class="row justify-content-center g-4" id="media-filter">
+        <div id="media-list" ></div>
+      </div>
+    </section>
     <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="isotope/isotope.pkgd.min.js" defer></script>
     <script src="js/theme.min.js" defer></script>
+    <script src="js/media.min.js" defer></script>
+    <script src="js/filter.min.js" defer></script>
+    <script>
+      window.onload = function() {
+        loadMedia();
+      };
+    </script>
   </body>
 </html>
