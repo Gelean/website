@@ -136,6 +136,7 @@ My personal website files for www.elderek.com and www.derekmelder.com
 
 * https://getbootstrap.com/
 * https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
+* https://github.com/prabinmagar/product-filter-boostrap5-and-isotope-plugin
 * https://www.pentacom.jp/pentacom/bitfontmaker2/
 * https://transfonter.org
 * https://dev.twitch.tv/docs/embed/everything
