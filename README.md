@@ -102,15 +102,23 @@ My personal website files for www.elderek.com and www.derekmelder.com
 1. Leave Routing Policy and Evaluate Target Health alone
 1. Now type your website into your browser and confirm both addresses (ex: elderek.com and www.elderek.com) are working
 
-### Using create-website.py
+### Using update-website.py
 
 1. Read: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 1. Install aws-cli
 1. Configure aws-cli credentials with aws configure
 1. Install Python 3
 1. ```pip install boto3 PyYaml```
-1. Update the region, domain_name, and stack_name variables in create-website.py
-1. ```py create-website.py```
+1. Update the region, domain_name, and stack_name variables in update-website.py
+1. ```py update-website.py```
+
+### Using GitHub actions
+
+1. Update the region, domain_name, and stack_name variables in update-website.py
+1. Go to your repository -> Settings -> Secrets and variables -> Actions -> New repository secret (ex: https://github.com/Gelean/website/settings/secrets/actions)
+1. Add a key titled AWS_ACCESS_KEY_ID with your AWS access key
+1. Add a key titled AWS_SECRET_ACCESS_KEY with your AWS secret access key
+1. Make a commit and confirm the GitHub actions fired off correctly
 
 ## Docker image
 
@@ -123,7 +131,6 @@ My personal website files for www.elderek.com and www.derekmelder.com
 1. Visit http://localhost:8080/home.html
 
 ### Tear down the Docker container
-
 
 1. ```docker rm $(docker stop $(docker ps -aq --filter ancestor=elderek-website-image --format="{{.ID}}"))```
 1. Alternate tear down commands:
