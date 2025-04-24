@@ -146,6 +146,7 @@ upload_files(root_files)
 # Upload files in subdirectories
 upload_files_from_dir('bootstrap')
 upload_files_from_dir('css')
+upload_files_from_dir('fontello')
 upload_files_from_dir('fonts')
 upload_files_from_dir('images')
 upload_files_from_dir('isotope')
