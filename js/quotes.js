@@ -154,6 +154,7 @@ var quotesArray = [
     ["Auferre, trucidare, rapere, falsis nominibus imperium, atque, ubi solitudinem faciunt, pacem appellant (To ravage, to slaughter, to usurp under false titles, they call empire, and where they make a desert, they call it peace).", "Tacitus, on the Romans"],
     ["Axioms constrain entropy.", "Jordan B. Peterson"],
     ["Balian of Ibelin: You go to certain death.<br>Hospitaller: All death is certain.", "Kingdom of Heaven"],
+    ["Basically all civilizations have the same deep fear of the great man that the Chinese alone have admitted to themselves in their saying: ‘The great man is a public misfortune.’ Basically all institutions are organized so that he arises as infrequently and under circumstances that are as unfavorable as possible.", "Friedrich Nietzsche"],
     ["Be careful what you wish for.", "Proverb"],
     ["Be extremely subtle, even to the point of formlessness. Be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.", "Sun Tzu"],
     ["Be fearful when others are greedy, and greedy when others are fearful.", "Warren Buffett"],
@@ -1459,7 +1460,7 @@ var quotesArray = [
 
 function displayQuote() {
 	var rand = Math.floor(Math.random() * (quotesArray.length));
-	document.getElementById('quote').innerHTML = "<h2>\"" + quotesArray[rand][0] + "\"</h2>" + "<h4>- " + quotesArray[rand][1] + "</h4>";
+	document.getElementById('quote').innerHTML = "<h1>\"" + quotesArray[rand][0] + "\"</h1>" + "<h2>- " + quotesArray[rand][1] + "</h2>";
 }
 
 window.onload = function() {
