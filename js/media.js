@@ -21,7 +21,7 @@ var media = [
     link: 'unknown,'
   },
   {
-    name: 'Hom I Met Your Mother',
+    name: 'How I Met Your Mother',
     type: 'show',
     imbibed: true,
     favorite: true,
