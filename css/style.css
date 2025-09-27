@@ -250,7 +250,7 @@ a, a:hover {
 }
 
 .background.home {
-    background-image: linear-gradient(var(--background-image-gradient)), url('../images/torrance.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/irvine.jpg');
 }
 
 .btn-teal {
@@ -288,7 +288,7 @@ a, a:hover {
     align-items: center;
     
     /* Background styles */
-    background-image: linear-gradient(var(--background-image-gradient)), url('../images/torrance.jpg');
+    background-image: linear-gradient(var(--background-image-gradient)), url('../images/irvine.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: repeat-y;
