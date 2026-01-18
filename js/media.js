@@ -1,53 +1,11 @@
-var media = [
-  {
-    name: 'Citizen Kane',
-    type: 'film',
-    imbibed: false,
-    favorite: false,
-    link: 'unknown,'
-  },
-  {
-    name: 'V for Vendetta',
-    type: 'film',
-    imbibed: true,
-    favorite: true,
-    link: 'unknown,'
-  },
-  {
-    name: 'Ogre Battle 64: Person of Lordly Caliber',
-    type: 'game',
-    imbibed: true,
-    favorite: true,
-    link: 'unknown,'
-  },
-  {
-    name: 'How I Met Your Mother',
-    type: 'show',
-    imbibed: true,
-    favorite: true,
-    link: 'unknown,'
-  },
-  {
-    name: 'The Blade Itself',
-    type: 'book',
-    imbibed: true,
-    favorite: true,
-    link: 'unknown,'
-  },
-  {
-    name: 'The Great Gatsby',
-    type: 'book',
-    imbibed: true,
-    favorite: false,
-    link: 'unknown,'
-  },
-];
+import media from '../media/media.json' assert { type: 'json' };
 
 function loadMedia() {
   let htmlElements = '';
 
   for (let i = 0; i < media.length; i++) {
     let classification = '';
+    let icon = '';
 
     if (media[i].type === 'game') {
       classification = 'games';
