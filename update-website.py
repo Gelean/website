@@ -59,6 +59,8 @@ def upload_files_from_dir(path):
                     content_type = 'image/svg+xml'
                 case '.css':
                     content_type = 'text/css'
+                case '.csv':
+                    content_type = 'text/csv'
                 case '.jpg':
                     content_type = 'image/jpeg'
                 case '.jpeg':
@@ -151,4 +153,5 @@ upload_files_from_dir('fonts')
 upload_files_from_dir('images')
 upload_files_from_dir('isotope')
 upload_files_from_dir('js')
+upload_files_from_dir('media')
 upload_files_from_dir('video')
