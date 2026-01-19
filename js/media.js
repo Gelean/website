@@ -1,6 +1,7 @@
-import media from '../media/media.json' assert { type: 'json' };
+async function loadMedia() {
+  const res = await fetch("../media/media.json");
+  const media = await res.json();
 
-function loadMedia() {
   let htmlElements = '';
 
   for (let i = 0; i < media.length; i++) {
