@@ -1,5 +1,5 @@
 async function loadMedia() {
-  const res = await fetch("../media/media.json");
+  const res = await fetch("media/media.json");
   const media = await res.json();
 
   let htmlElements = '';
@@ -59,3 +59,5 @@ async function loadMedia() {
     layoutMode: 'fitRows'
   });
 }
+
+window.addEventListener("DOMContentLoaded", loadMedia);
