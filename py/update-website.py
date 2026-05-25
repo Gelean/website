@@ -26,6 +26,7 @@ class MyStr(str):
 
 def upload_files(file_array):
     for file in file_array:
+        print("Uploading " + file)
         file_path = pathlib.Path(file).resolve()
         s3_key = file_path.relative_to(BASE_DIR).as_posix()
         content_type = ''
@@ -40,10 +41,10 @@ def upload_files(file_array):
 
 # Handle uploading files in directories and subdirectories
 def upload_files_from_dir(path):
-    for subdir, dirs, files in os.walk(BASE_DIR / path):
+    for subdir, dirs, files in os.walk(path):
         for file in files:
+            print("Uploading " + file)
             full_file_path = os.path.join(subdir, file)
-            full_file_path = pathlib.Path(subdir) / file
             full_file_path = pathlib.PureWindowsPath(full_file_path).as_posix()
             content_type = ''
             match MyStr(full_file_path):
