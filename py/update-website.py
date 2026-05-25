@@ -8,12 +8,15 @@ import time
 import sys
 import glob
 
+SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
+BASE_DIR = SCRIPT_DIR.parent # project root (website files live here)
+
 # Set up region, domain name, bucket name, stack name, cloudformation file, and boto clients
 region = 'us-east-1'
 domain_name = 'derekmelder.com'
 stack_name = 'derekmelder-website-stack'
 bucket_name = 'www.' + domain_name
-cloudformation_file = 'website.yml'
+cloudformation_file = BASE_DIR  / 'website.yml'
 
 s3_client = boto3.client('s3', region_name=region)
 cloudformation_client = boto3.client('cloudformation', region_name=region)
@@ -23,6 +26,8 @@ class MyStr(str):
 
 def upload_files(file_array):
     for file in file_array:
+        file_path = pathlib.Path(file).resolve()
+        s3_key = file_path.relative_to(BASE_DIR).as_posix()
         content_type = ''
         match MyStr(file):
             case '.doc':
@@ -31,13 +36,14 @@ def upload_files(file_array):
                 content_type = 'application/pdf'
             case '.html':
                 content_type = 'text/html'
-        s3_client.upload_file(Filename=file, Key=file, Bucket=bucket_name, ExtraArgs={'ContentType': content_type})
+        s3_client.upload_file(Filename=file, Key=s3_key, Bucket=bucket_name, ExtraArgs={'ContentType': content_type})
 
 # Handle uploading files in directories and subdirectories
 def upload_files_from_dir(path):
-    for subdir, dirs, files in os.walk(path):
+    for subdir, dirs, files in os.walk(BASE_DIR / path):
         for file in files:
             full_file_path = os.path.join(subdir, file)
+            full_file_path = pathlib.Path(subdir) / file
             full_file_path = pathlib.PureWindowsPath(full_file_path).as_posix()
             content_type = ''
             match MyStr(full_file_path):
@@ -143,6 +149,7 @@ types = ('*.html', '*.doc', '*.pdf')
 root_files = []
 for files in types:
     root_files.extend(glob.glob(files))
+    root_files.extend(glob.glob(str(BASE_DIR / files)))
 upload_files(root_files)
 
 # Upload files in subdirectories
@@ -154,4 +161,5 @@ upload_files_from_dir('images')
 upload_files_from_dir('isotope')
 upload_files_from_dir('js')
 upload_files_from_dir('media')
+upload_files_from_dir('py')
 upload_files_from_dir('video')

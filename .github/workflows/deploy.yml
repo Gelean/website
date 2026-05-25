@@ -34,4 +34,4 @@ jobs:
         run: pip install boto3 PyYaml
 
       - name: Run deployment script to deploy files to S# website
-        run: python update-website.py
+        run: python py/update-website.py
